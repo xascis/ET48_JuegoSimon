@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\simonSound0.mp3" />
+    <None Remove="Assets\simonSound1.mp3" />
+    <None Remove="Assets\simonSound2.mp3" />
+    <None Remove="Assets\simonSound3.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\simonSound0.mp3" />
+    <EmbeddedResource Include="Assets\simonSound1.mp3" />
+    <EmbeddedResource Include="Assets\simonSound2.mp3" />
+    <EmbeddedResource Include="Assets\simonSound3.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
   </ItemGroup>
 </Project>

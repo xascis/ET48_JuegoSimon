@@ -4,11 +4,31 @@
              xmlns:local="clr-namespace:ET48_JuegoSimon"
              x:Class="ET48_JuegoSimon.MainPage">
 
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+
+        <BoxView x:Name="boxview0" VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        <BoxView x:Name="boxview1" VerticalOptions="FillAndExpand">
+        </BoxView>
+
+        <Button x:Name="startGameButton" Text="Begin" Font="Large" HorizontalOptions="Center" Clicked="OnStartGameButtonClicked" />
+        <BoxView x:Name="boxview2" VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        <BoxView x:Name="boxview3" VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
     </StackLayout>
 
 </ContentPage>
